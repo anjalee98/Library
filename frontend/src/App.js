@@ -8,6 +8,9 @@ import Category from './components/customers/category';
 import StaffHome from './components/staff/staffHome';
 import AddCustomer from './components/customers/addCustomers';
 import EditCustomer from './components/customers/editCustomers';
+import AddStaff from './components/staff/addStaff';
+import StaffList from './components/staff/viewStaffList';
+import UpdateStaff from './components/staff/updateStaff';
 
 function App() {
   return (
@@ -25,6 +28,9 @@ function App() {
        <Route exact path="/shome" element={<StaffHome/>} />
        <Route exact path="/addCustomer" element={<AddCustomer/>} />
        <Route exact path="/ediCustomer" element={<EditCustomer/>} />
+       <Route exact path="/addStaff" element={<AddStaff/>} />
+       <Route exact path="/staffList" element={<StaffList/>} />
+       <Route exact path="/editStaff/:id" element={<UpdateStaff/>} />
      
        </Routes> 
      </Router>

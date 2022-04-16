@@ -34,6 +34,9 @@ connection.once("open", () => {
 const itemRouter = require("./routes/items.js");
 app.use("/items", itemRouter);
 
+//Users route
+const userRouter = require("./routes/staffs.js");
+app.use("/staff", userRouter);
 
 //Running the app on the defined port
 app.listen(PORT, () => {
